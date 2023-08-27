@@ -9,9 +9,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      fontFamily: {
+        tilt: ['Tilt Prism', 'sans-serif'],
+      },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
 
