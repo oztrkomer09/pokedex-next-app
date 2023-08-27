@@ -1,9 +1,15 @@
-import Image from 'next/image'
+export default async function Home() {
+  const pokemons = await getPokemons()
 
-export default function Home() {
   return (
-    <div className=" flex justify-center items-center h-screen w-full bg-red-600 text-white">
-      <p className='text-7xl font-bold'>Pokedex App</p>
+    <div className="bg-white w-full h-full">
+      PokeApp
     </div>
   )
+
+}
+export const getPokemons = async () => {
+  const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=-1')
+  const data = await res.json()
+  return data
 }
