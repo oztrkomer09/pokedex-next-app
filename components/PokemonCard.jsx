@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { getPokemon } from "@/app/API/pokemonAPI";
 
@@ -7,14 +8,19 @@ const PokemonCard = async ({ pokemon }) => {
   const pokemonData = await getPokemon(pokemon.name);
 
   return (
-    <div className="flex justify-center items-center border-2 border-black w-44 h-48">
-      <Image
-        alt={pokemon.name}
-        src={pokemonData.sprites.front_default}
-        width={100}
-        height={100}
-      />
-    </div>
+    <Link href={`/pokemon/${pokemonData.id}`}>
+      <div className="flex flex-col justify-center items-center border-2 border-black w-52 h-52 bg-green-400 hover:scale-105 transition-all">
+        <div className="bg-white">
+          <Image
+            alt={pokemon.name}
+            src={pokemonData.sprites.front_default}
+            width={120}
+            height={120}
+          />
+        </div>
+        <p className="text-xl font-bold">{pokemon.name}</p>
+      </div>
+    </Link>
   );
 };
 
