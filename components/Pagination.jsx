@@ -5,13 +5,13 @@ const Pagination = ({ pageNo }) => {
   return (
     <div className="flex justify-between items-center absolute bottom-4 w-full px-5">
       <Link
-        href={pageNo <= 1 ? "/" : `http://localhost:3000/page/${pageNo - 1}`}
+        href={pageNo <= 1 ? "/" : `/page/${pageNo - 1}`}
         className="font-semibold hover:underline hover:text-green-700"
       >
         Previous
       </Link>
       <Link
-        href={`http://localhost:3000/page/${pageNo + 1}`}
+        href={`/page/${pageNo + 1}`}
         className="font-semibold hover:underline hover:text-green-700"
       >
         Next
