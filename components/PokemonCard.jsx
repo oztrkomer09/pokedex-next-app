@@ -13,7 +13,7 @@ const PokemonCard = async ({ pokemon }) => {
         <div className="bg-white">
           <Image
             alt={pokemon.name}
-            src={pokemonData.sprites.front_default}
+            src={pokemonData.sprites.other.home.front_default}
             width={120}
             height={120}
           />
