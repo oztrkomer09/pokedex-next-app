@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         tilt: ['Tilt Prism', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
     plugins: [],
