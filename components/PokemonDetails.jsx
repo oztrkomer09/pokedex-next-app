@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import BackButton from "./BackButton";
 
 const PokemonDetails = ({ pokemon }) => {
   return (
-    <div className="w-full h-full bg-white pb-4">
+    <div className="w-full h-full bg-white pb-4 relative">
+      <BackButton />
       <div className="flex  justify-center items-center">
         <Image
           src={pokemon.sprites.other.home.front_default}
