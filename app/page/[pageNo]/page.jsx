@@ -1,5 +1,5 @@
 import PokemonCard from "../../../components/PokemonCard";
-import { getPokemons } from "../../API/pokemonAPI";
+import { getPokemons } from "../../lib/pokemonAPI";
 import Pagination from "@/components/Pagination";
 
 export default async function Page({ params }) {

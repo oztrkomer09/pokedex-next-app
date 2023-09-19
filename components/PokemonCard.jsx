@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getPokemon } from "@/app/API/pokemonAPI";
+import { getPokemon } from "@/app/lib/pokemonAPI";
 
 const PokemonCard = async ({ pokemon }) => {
   const pokemonData = await getPokemon(pokemon.name);

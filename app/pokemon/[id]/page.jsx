@@ -1,4 +1,4 @@
-import { getPokemon } from "@/app/API/pokemonAPI";
+import { getPokemon } from "@/app/lib/pokemonAPI";
 import PokemonDetails from "@/components/PokemonDetails";
 
 const PokemonPage = async ({ params }) => {
