@@ -7,7 +7,7 @@ import { getPokemon } from "@/app/lib/pokemonAPI";
 const PokemonCard = async ({ pokemon }) => {
   const pokemonData = await getPokemon(pokemon.name);
   const colors = {
-    normal: "#A8A77A",
+    normal: "#A8A77C",
     fighting: "#C22E28",
     flying: "#A98FF3",
     poison: "#A33EA1",
